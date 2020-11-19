@@ -14,6 +14,7 @@ exports.create = (req, res) => {
     const task = new Task({
         nombre: req.body.nombre,
         descripcion: req.body.descripcion,
+        estado: req.body.estado,
         id_list: req.body.idList
     });
     // Save the Task in the database
@@ -77,6 +78,7 @@ exports.update = (req, res) => {
     Task.findByIdAndUpdate(req.params.id, {
         nombre: req.body.nombre,
         descripcion: req.body.descripcion,
+        estado: req.body.estado,
         id_list: req.body.idList
     }, { new: true })
         .then(task => {

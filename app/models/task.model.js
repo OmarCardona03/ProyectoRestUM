@@ -18,6 +18,12 @@ const TasksSchema = mongoose.Schema({
         trim: true,
         minlength: 5
     },
+    estado: {
+        type: String,
+        required: false,
+        trim: true,
+        minlength: 4
+    },
     id_list: { type: Schema.ObjectId, ref: 'tasklist' }
 
 }, {
