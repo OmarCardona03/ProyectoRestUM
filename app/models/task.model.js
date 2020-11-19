@@ -11,7 +11,7 @@ const TasksSchema = mongoose.Schema({
         minlength: 5
     },
     descripcion: {
-        type: Number,
+        type: String,
         index: true,
         unique: true,
         required: false,
