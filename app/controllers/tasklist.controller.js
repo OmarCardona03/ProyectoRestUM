@@ -66,7 +66,7 @@ exports.findOne = (req, res) => {
 // Update a List by its id
 exports.update = (req, res) => {
     //console.log("Updating a particular List ... soon!");    
-    // Validate if the request's body is empty
+    // Validate if the request's body is empty 
     // (does not include required data)
     if (Object.keys(req.body).length === 0) {
         return res.status(400).send({
